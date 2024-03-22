@@ -1,70 +1,161 @@
-# Getting Started with Create React App
+# :rocket: Todoodles | A React Redux Todo App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> Todoodles is a CRUD todo app created as a `Redux Toolkit` study.
 
-## Available Scripts
+[![Netlify][netlify-img]][netlify-url]
+[![GitHub repo size][github-img]][github-url]
+[![GitHub last commit][github-commit]][github-url]
 
-In the project directory, you can run:
 
-### `npm start`
+<!-- Badges to Add: Netlify build, twitter, license? -->
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<p align="center">
+  <img src="src/assets/rtk-todoodles.png" alt="Redux Toolkit with TailwindCSS Todo App" width="500">
+</p>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+Users can create, read, update and edit entries via Redux state management.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[DEMO](https://todoodles-redux-toolkit-tailwind-app.netlify.app/ "RTK Tailwind Todo Demo")
 
-### `npm run build`
+### Technology
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Reactjs 18 | Installed using the Redux & Redux Toolkit template
+2. Redux Toolkit | [Getting Started](https://redux-toolkit.js.org/introduction/getting-started)
+3. React Router 6 | [React Router](https://reactrouter.com/en/v6.3.0/getting-started/overview)
+4. TailwindCSS | [TailwindCSS](https://tailwindcss.com/docs/installation)
+5. Redux DevTools for Chrome | [Dev Tools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting Started
 
-### `npm run eject`
+These instructions will give you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on deploying the project on a live system.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Development setup
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Download and extract the Zip file or clone this repo your system.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+After downloading/cloning this repo, go to its root directory and run:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```
+$ npm i
+$ npm start
+```
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+This project is hosted on Netlify. To deploy your own copy, you will need to set up a Netlify account. Netlify offers a generous free tier to developers.
 
-### `npm run build` fails to minify
+Before deploying to Netlify you need to create a build:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+$ npm run build
+```
+
+It is a good idea to test your build by serving it on your localhost. Once you are happy with your build, open up your Netlify Account.
+
+For a basic deploy, you can simply drag and drop the build folder onto your Netlify Sites directory. See [Get started with Netlify](https://docs.netlify.com/get-started/) for details.
+
+## :books: Learning Resources
+
+Tutorial
+   - [CRUD Operations with React and Redux Toolkit](https://www.youtube.com/watch?v=SgnlgEEkqSo) by Cand Dev
+
+Layouts with React Router 6
+   - [React Router v6 Shared layouts](https://stackoverflow.com/questions/70236929/react-router-v6-shared-layouts)
+   - [React Router Example](https://stackblitz.com/github/remix-run/react-router/tree/main/examples/basic?file=src%2FApp.tsx)
+
+Use of Index Files
+   - [How do index.js files work in React component directories?](https://stackoverflow.com/questions/44092341/how-do-index-js-files-work-in-react-component-directories)
+
+
+## :memo: Notes
+
+### 1. Nanoid
+Nanoid is now part of React Toolkit, so you do not have to add a separate package unless your project requires a different universal identifyer.
+
+### 2. React File Structure
+Redux / Redux Toolkit currently recommends structuring files as Feature folders with all files for a feature in the same folder:
+
+   - [Redux Style Guide](https://redux.js.org/style-guide/#structure-files-as-feature-folders-with-single-file-logic)
+
+React File Structure
+   - [File Structure from Reactjs](https://reactjs.org/docs/faq-structure.html)
+   - [Delightful React File/Directory Structure](https://www.joshwcomeau.com/react/file-structure/)
+
+### 3. Use of Index Files in Folders
+As your React project grows, index files can really help clean up your file imports, making your code easier to read. This is especially useful for larger projects with multiple Redux slice reducers.
+
+Instead of:
+```
+app.js
+
+import { Routes, Route } from 'react-router-dom'
+import AddTodo from "./features/todos/AddTodo";
+import EditTodo from "./features/todos/EditTodo";
+import TodoList from "./features/todos/TodoList";
+import Layout from './components/Layout
+import NotFound from './components/NotFound
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<TodoList />} />
+        <Route path="add-todo" element={<AddTodo />}/>
+        <Route path="edit-todo/:id" element={<EditTodo />}/>
+        <Route path="*" element={<NotFound />}/>
+      </Route>
+    </Routes>
+  );
+}
+
+export default App
+
+```
+In projects with multiple slice reducers, the imports list would grow exponentially and cause the code to be hard to read. Use cleaner imports:
+```
+app.js
+
+import { Routes, Route } from 'react-router-dom'
+import { TodoList, AddTodo, EditTodo } from './features/todos'
+import { Layout, NotFound } from './components'
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<TodoList />} />
+        <Route path="add-todo" element={<AddTodo />}/>
+        <Route path="edit-todo/:id" element={<EditTodo />}/>
+        <Route path="*" element={<NotFound />}/>
+      </Route>
+    </Routes>
+  );
+}
+
+export default App
+```
+Sample Index:
+```
+components/index.js
+
+import Button from "./Button";
+import Header from "./Header";
+import Layout from "./Layout";
+import NotFound from './NotFound'
+import TextField from "./TextField";
+import FormContainer from "./FormContainer";
+
+export { Button, Header, Layout, TextField, NotFound, FormContainer }
+
+```
+
+<!-- Markdown link & img dfn's -->
+[github-img]: https://img.shields.io/github/repo-size/lisawagner/rtk-tailwind-todo?logo=github&style=flat-square
+[github-url]: https://github.com/lisawagner/rtk-tailwind-todo
+[github-commit]: https://img.shields.io/github/last-commit/lisawagner/rtk-tailwind-todo?logo=github&style=flat-square
+
+[netlify-img]: https://img.shields.io/netlify/8f53362b-5385-445d-bff8-fbf44086fa13?style=flat-square
+[netlify-url]: https://todoodles-redux-toolkit-tailwind-app.netlify.app/
